@@ -66,7 +66,10 @@ public class Jugador {
       if (posicionJugador.y<=330) {
         velocidad.y*=-1;
       } else if (posicionJugador.y>=450) {
-        posicionJugador.y=450;
+        velocidad.y=0;
+        if(keyPressed) {
+          velocidad.y=15;
+        }
       }
     }    
   }
